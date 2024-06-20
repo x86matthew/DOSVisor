@@ -1,7 +1,7 @@
 # DOSVisor
 
 ## Overview
-This project is a DOS emulator that utilises the Windows Hypervisor Platform (WHP) API to create a virtual CPU, enabling the execution of DOS programs within a virtualised real-mode environment on modern Windows systems.
+This project is a DOS emulator that utilises the Windows Hypervisor Platform (WHP) API to create a virtual CPU, enabling the execution of DOS programs within a virtualised 16-bit real-mode environment on modern Windows systems.
 
 In my previous Windows 3.1 emulator, the 80286 CPU was fully emulated in software. However, for this project, I decided to take a different approach by using hardware virtualisation for the CPU while emulating only the DOS layer in software.
 
