@@ -1,5 +1,9 @@
 #include "DosVisor.h"
 
+#ifndef _WIN64
+#error Must be compiled as 64-bit
+#endif
+
 int main(int argc, char *argv[])
 {
 	if(argc != 2)
