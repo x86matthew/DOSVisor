@@ -428,6 +428,7 @@ DWORD LaunchHypervisor(char *pExeFilePath)
 	// initialise log pipe
 	if(InitialiseLogServer() != 0)
 	{
+		printf("Error: Failed to initialise log server\n");
 		return 1;
 	}
 
