@@ -523,7 +523,7 @@ DWORD LaunchHypervisor(char *pExeFilePath)
 			// cpuid
 			if(VmExit_Cpuid(&VmExitState) != 0)
 			{
-				WriteLog("Error: VmExit_Cpuid\n", VmExitContext.ExitReason);
+				WriteLog("Error: VmExit_Cpuid\n");
 				break;
 			}
 		}
@@ -532,7 +532,7 @@ DWORD LaunchHypervisor(char *pExeFilePath)
 			// io port (in/out)
 			if(VmExit_IoPort(&VmExitState) != 0)
 			{
-				WriteLog("Error: VmExit_IoPort\n", VmExitContext.ExitReason);
+				WriteLog("Error: VmExit_IoPort\n");
 				break;
 			}
 		}
@@ -541,7 +541,7 @@ DWORD LaunchHypervisor(char *pExeFilePath)
 			// halt
 			if(VmExit_Halt(&VmExitState) != 0)
 			{
-				WriteLog("Error: VmExit_Halt\n", VmExitContext.ExitReason);
+				WriteLog("Error: VmExit_Halt\n");
 				break;
 			}
 		}
@@ -550,7 +550,7 @@ DWORD LaunchHypervisor(char *pExeFilePath)
 			// invalid memory access
 			if(VmExit_MemoryAccess(&VmExitState) != 0)
 			{
-				WriteLog("Error: VmExit_MemoryAccess\n", VmExitContext.ExitReason);
+				WriteLog("Error: VmExit_MemoryAccess\n");
 				break;
 			}
 		}
